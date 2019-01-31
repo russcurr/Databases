@@ -1,0 +1,56 @@
+>What data types do each of these values represent?
+
+"A Clockwork Orange"  `string`
+42   `integer`
+09/02/1945  `date`
+98.7  `float`
+$15.99  `string`
+
+>Explain when a database would be used. Explain when a text file would be used.
+A data base would be used when you are looking up start times for a movie.
+A text file would be used when you want to read data.
+
+>Describe one difference between SQL and other programming languages.
+SQL is declarative rather than a procedural language.
+
+>In your own words, explain how the pieces of a database system fit together at a high level.
+Databases display data using a table structure that define what the data represents.  The way it works is databases allow you 
+to query and change the data.  Then we can run SQL to get results, update or change the way we store the data.
+
+>Explain the meaning of table, row, column, and value.
+ Columns contain the name of the information stored in the cell for that column. Rows contain the data for the columns, and the 
+ value is what is found in the cell
+
+>List three data types that can be used in a table.
+ `Integer`, `text`, `float` 
+
+>Given this payments table, provide an English description of the following queries and include their results:
+
+select the date and the amount from the payments database table
+ 5/1/2016    1500.00
+ 5/10/2016   37.00   
+ 5/15/2016   124.93
+ 5/23/2016   54.72
+ 
+ select the amount from the payments database table where the  amount is greater than 500 dollars
+ 1500.00
+
+ select all of the columns from payments database table where the  payee is Mega Foods 
+ ('5/15/2016', 'Mega Foods',   124.93,  'Groceries'),
+
+>Given this users table, write SQL queries using the following criteria and include the output:
+
+Select email, sign-up date
+Where user = 'DeAndre Data';
+'datad@comcast.net', 2008-01-20
+
+ Select user 
+ Where email = 'aleesia.algorithm@uw.edu';
+ 'Aleesia Algorithm'
+
+ Select * 
+ Where user id = 4;
+ ( 4,       'Brandy Boolean',    'bboolean@nasa.gov',            '1999-10-15');
+
+
+
